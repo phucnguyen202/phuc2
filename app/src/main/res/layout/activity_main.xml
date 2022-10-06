@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="#71A6D1"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="#272323"
+            android:src="@drawable/aa1" />
+
+        <EditText
+            android:id="@+id/edittextuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vien"
+            android:ems="15"
+            android:hint="User Name"
+            android:textColorHint="#3399FF"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edittextpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/vien"
+            android:ems="15"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#3399FF"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/buttondangnhap"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="200dp"
+            android:background="@drawable/color"
+            android:text="LOGIN ME"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/buttonDangNhap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="3dp"
+            android:text="Sign In"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Button
+            android:id="@+id/buttonDangKy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="3dp"
+            android:text="Sign Up"
+            app:layout_constraintStart_toEndOf="@+id/buttonDangNhap"
+            app:layout_constraintTop_toBottomOf="@+id/edittextPassword" />
+
+    </LinearLayout>
+</RelativeLayout>
